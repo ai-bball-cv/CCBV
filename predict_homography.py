@@ -12,7 +12,8 @@ from pathlib import Path
 import torch
 import torchvision.transforms as transforms
 
-from kornia.geometry.warp import HomographyWarper, normalize_homography
+from kornia.geometry.transform import HomographyWarper
+from kornia.geometry.conversions import normalize_homography
 from sklearn.metrics import jaccard_score
 from PIL import Image
 from tqdm import tqdm

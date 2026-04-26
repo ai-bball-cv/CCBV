@@ -78,5 +78,5 @@ class Field:
         hr = hr.unsqueeze(0)
 
         # Warp the model
-        warped_field = warp_perspective(self.four.unsqueeze(0), hr, (144, 256), flags='nearest')
+        warped_field = warp_perspective(self.four.unsqueeze(0), hr, (144, 256), mode='nearest')
         return warped_field
